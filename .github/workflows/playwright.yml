@@ -17,6 +17,6 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Start vite app
-        run: npm run preview
+        run: npm run preview &
       - name: Run Playwright tests
         run: npx playwright test
